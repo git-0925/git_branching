@@ -14,3 +14,9 @@ git branch -d <namabranch>/git branch --delete <namabranch> //hapus branch, tapi
 //Git dapat menangani sebanyak apapun branch dengan baik
 //Dapat melakukan pembuatan beberapa branch, melakukan perubahan dan commit tiap branch
 git log --oneline --graph //melihat branch dengan graph
+
+//Merge
+//Proses penggabungan dua branch, dan branch tidak dihapus atau masih tetap commit dll
+//Untuk lakukan merge, perlu pindah ke branch lokasi merge akan dilakukan
+git merge <namabranch> //branch <namabranch> akan di merge ke branch saat ini berada
+//Misal ingin merge branch feature/1 ke master, maka pindah ke master dan jalankan git merge feature/1
