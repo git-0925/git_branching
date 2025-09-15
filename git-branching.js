@@ -30,3 +30,8 @@ git merge <namabranch> //branch <namabranch> akan di merge ke branch saat ini be
 //Kita harus melakukan merge conflict untuk mengatasinya, dengan memperbaiki pada merge editor scr manual
 //Setelah selesai perbaiki manual, add dan commit lagi seperti biasa
 git merge --abort //bisa juga untuk membatalkan conflict, semua perubahan merge yg conflict akan dihapus
+
+//Cherry Pick
+//Kondisi ketika ingin mengambil salah satu/beberapa commit saja dari sebuah branch ke branch saat ini
+//Berbeda dengan merge yang pasti mengambil keseluruhan commit
+git cherry-pick <commitId>
