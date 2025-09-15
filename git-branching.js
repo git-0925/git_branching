@@ -9,3 +9,8 @@ git branch --list/git branch //melihat semua branch
 git switch <namabranch>/git checkout <namabranch> //pindah ke branch lain
 git branch -m <namabranchbaru> //mengubah nama branch, namun harus pindah ke branch yang ingin di rename dulu
 git branch -d <namabranch>/git branch --delete <namabranch> //hapus branch, tapi harus pindah dari branch yang mau dihapus dulu
+
+//Multiple Branch
+//Git dapat menangani sebanyak apapun branch dengan baik
+//Dapat melakukan pembuatan beberapa branch, melakukan perubahan dan commit tiap branch
+git log --oneline --graph //melihat branch dengan graph
