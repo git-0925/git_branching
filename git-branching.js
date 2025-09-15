@@ -20,3 +20,13 @@ git log --oneline --graph //melihat branch dengan graph
 //Untuk lakukan merge, perlu pindah ke branch lokasi merge akan dilakukan
 git merge <namabranch> //branch <namabranch> akan di merge ke branch saat ini berada
 //Misal ingin merge branch feature/1 ke master, maka pindah ke master dan jalankan git merge feature/1
+
+//Merge Conflict
+//Kondisi ketika melakukan perubahan pada kode file yang sama di branch yang berbeda
+//Dan ketika melakukan merge akan terjadi konflik, sehingga perlu adanya merge conflict
+//Misal branchA & branchB merubah file1, kemudian keduanya merge ke master
+//Ketika branchA merge ke master masih aman, namun ketika branchB merge ke master akan conflict
+//Perubahan yg tidak conflict akan ada di staging, sedangkan yang conflict berada di working directory
+//Kita harus melakukan merge conflict untuk mengatasinya, dengan memperbaiki pada merge editor scr manual
+//Setelah selesai perbaiki manual, add dan commit lagi seperti biasa
+git merge --abort //bisa juga untuk membatalkan conflict, semua perubahan merge yg conflict akan dihapus
