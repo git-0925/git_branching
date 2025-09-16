@@ -72,3 +72,8 @@ git rebase <namabranch> //pindah dulu ke branch yang akan melakukan rebase (keba
 //Setelah melakukan squash, perubahan yang dijadikan 1 tidak langsung ter-commit tapi ada di staging
 //Setelah dirasa aman baru bisa manual commit, dan di log hanya akan tertera 1 commit terakhir ini
 git merge --squash <namabranch> //squash ketika merge
+
+//Git Branching Strategy
+//1. Gitflow Workflow,
+//2. Trunk Based Development Workflow,
+//3. Forking Workflow
