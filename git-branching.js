@@ -65,3 +65,10 @@ git rebase <namabranch> //pindah dulu ke branch yang akan melakukan rebase (keba
 //Setelah rebase, bukan berarti branch yg di rebase sekarang ada di branch yang melakukan rebase, tapi tetap ada di commit terakhir branch tsb
 //Maka perlu melakukan merge feature/D ke master untuk fast forward posisi commit terakhir di master ke commit terakhir timeline setelah rebase
 //Merge vs Rebase sama sama baik, kembali ke kebutuhan perusahan masing-masing
+
+//Squash
+//Menggabungkan beberapa commit menjadi 1 commit saja agar terlihat lebih rapi
+//Squash bisa dilakukan ketika merge/rebase
+//Setelah melakukan squash, perubahan yang dijadikan 1 tidak langsung ter-commit tapi ada di staging
+//Setelah dirasa aman baru bisa manual commit, dan di log hanya akan tertera 1 commit terakhir ini
+git merge --squash <namabranch> //squash ketika merge
