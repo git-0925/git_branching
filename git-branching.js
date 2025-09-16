@@ -55,3 +55,13 @@ git stash show <stashId> //melihat perubahan yang terjadi di stash
 git stash apply <stashId> //mengambil perubahan stash, namun harus pindah dulu ke branch yang mau kita tarik perubahan stash tsb
 git stash drop <stashId> //menghapus stash spesifik/stash yang sudah diambil
 git stash clear //menghapus semua stash
+
+//Rebase
+//Proses atau cara lain untuk menggabungkan dua buah branch yang lebih kompleks dari merge
+//Jika pada merge timeline 2 branch berbeda, dan jika dimerge branch satunya masih ada
+//Pada rebase akan menjadikan timeline dua branch menjadi sejalur lagi, dan branch satunya akan dihapus
+git rebase <namabranch> //pindah dulu ke branch yang akan melakukan rebase (kebalikan merge)
+//Jika sekarang ada di branch feature/D , lalu exe. git rebase master maka : rebase semua commit di master ke branch feature/D
+//Setelah rebase, bukan berarti branch yg di rebase sekarang ada di branch yang melakukan rebase, tapi tetap ada di commit terakhir branch tsb
+//Maka perlu melakukan merge feature/D ke master untuk fast forward posisi commit terakhir di master ke commit terakhir timeline setelah rebase
+//Merge vs Rebase sama sama baik, kembali ke kebutuhan perusahan masing-masing
