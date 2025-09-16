@@ -35,3 +35,12 @@ git merge --abort //bisa juga untuk membatalkan conflict, semua perubahan merge 
 //Kondisi ketika ingin mengambil salah satu/beberapa commit saja dari sebuah branch ke branch saat ini
 //Berbeda dengan merge yang pasti mengambil keseluruhan commit
 git cherry-pick <commitId>
+
+//Tag
+//Fitur untuk menandai sebuah commit id, bisa untuk sebuah reference ke sebuah commit
+//Biasanya digunakan sebagai penanda versi rilis dari aplikasi, misal Tag 1.0.0, 1.0.1, dll
+//Tag bersifat unik atau tidak bisa membuat tag dengan nama yang sama
+git tag <tagName> <commitId> //membuat tag suatu commit
+git tag -l/git tag --list //menampilkan semua tag yang dibuat
+git checkout <tagName> //pindah ke suatu tag
+git tag -d <tagName>/git tag --delete <tagName> //menghapus tag, tidak dapat mengubah tag di git
