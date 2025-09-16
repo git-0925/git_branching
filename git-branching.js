@@ -44,3 +44,14 @@ git tag <tagName> <commitId> //membuat tag suatu commit
 git tag -l/git tag --list //menampilkan semua tag yang dibuat
 git checkout <tagName> //pindah ke suatu tag
 git tag -d <tagName>/git tag --delete <tagName> //menghapus tag, tidak dapat mengubah tag di git
+
+//Stash
+//Sebuah tempat yang bisa menyimpan perubahan di working/staging secara sementara
+//Agar branch saat ini menjadi bersih kembali, sehingga bisa pindah ke branch lain dulu
+//Karena secara default jika terdapat perubahan belum dicommit/terjadi conflict tidak dapat pindah branch lain
+git stash push -m '<message>' //membuat stash baru, sudah bisa pindah ke branch lain
+git stash list //melihat semua stash yang dibuat
+git stash show <stashId> //melihat perubahan yang terjadi di stash
+git stash apply <stashId> //mengambil perubahan stash, namun harus pindah dulu ke branch yang mau kita tarik perubahan stash tsb
+git stash drop <stashId> //menghapus stash spesifik/stash yang sudah diambil
+git stash clear //menghapus semua stash
