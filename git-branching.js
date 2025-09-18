@@ -75,5 +75,12 @@ git merge --squash <namabranch> //squash ketika merge
 
 //Git Branching Strategy
 //1. Gitflow Workflow,
+//Strategi git branching yang paling tua dan paling banyak digunakan
+//https://nvie.com/posts/a-successful-git-branching-model/
 //2. Trunk Based Development Workflow,
+//Salah satu strategi git branching yang sedang populer, tujuannya sederhanda & deliver pekerjaan secepatnya
+//https://trunkbaseddevelopment.com/
 //3. Forking Workflow
+//Strategi git branching populer dalam project open source
+//Adalah mekanisme menduplikasi repository, biasanya karena contributor tidak memiliki akses mengedit repository utama
+//https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
